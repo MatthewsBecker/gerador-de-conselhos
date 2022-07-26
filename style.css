@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: hsl(218, 23%, 16%);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    background-color: hsl(217, 19%, 24%);
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.container span{
+    background-color: hsl(217, 19%, 24%);
+    color: hsl(150, 100%, 66%);
+    font-family: sans-serif;
+}
+
+.container p{
+    background-color: transparent;
+    color: hsl(193, 38%, 86%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+.container img{
+    background-color: transparent;
+}
+
+button{
+    background-color: hsl(150, 100%, 66%);
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    transform: translateY(-30px);
+}
+
+button img {
+    background-color: transparent;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px hsl(150, 100%, 66%)
+}
+
+@media (max-width: 575.98px) {
+    .container{
+        width: 300px;
+    }
+
+    .container img {
+        width: 280px;
+    }
+
+    .container p{
+        font-size: 20px;
+    }
+
+    .container span{
+        font-size: 15px;
+    }
+
+}
